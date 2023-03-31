@@ -12,11 +12,6 @@ while(number <= N)
     if(number % 2 == 0)
     {
         Console.WriteLine($"{number} четное");
-        number ++;
     }
-    else
-    {
-        number ++;
-    }
-
+number ++;
 }
