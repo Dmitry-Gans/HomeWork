@@ -19,12 +19,7 @@ while(index < size)
     if(array[index] > max)
     {
         max = array[index];
-        index++;
     }
-   
-    else
-    {
-        index++;
-    }
+    index++;
 }
 Console.WriteLine($"Максимальное число {max}");
