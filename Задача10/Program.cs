@@ -5,7 +5,7 @@
 918 -> 1
 */
 
-Console.WriteLine("Введите число трехзначное число");
+Console.WriteLine("Введите трехзначное число");
 int number = int.Parse(Console.ReadLine());
 int result = (number % 100) / 10;
 Console.WriteLine($"{number} -> {result}");
