@@ -22,5 +22,5 @@ int[] GenerationArray(int lenght)
 }
 void PrintArray(int[] array)
 {
-    Console.WriteLine($"[{string.Join(", ", array)}]");
+    Console.WriteLine($"{string.Join(", ", array)} -> [{string.Join(", ", array)}]");
 }
