@@ -17,7 +17,8 @@ PrintArray(array);
 
 bool result = Equals(array, reverseArray);
 //Так как метод засунули в переменную result, выводим ее через консоль
-Console.WriteLine($" Ответ: {result}");
+Console.WriteLine();
+Console.WriteLine($"Ответ: {result}");
 
 //Нужно сравнить два массива
 bool Equals(int[] array1, int[] array2)
