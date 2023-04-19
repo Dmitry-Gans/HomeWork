@@ -17,7 +17,7 @@ int[] array = FillInArray(size);
 PrintArray(array);
 int result = CheckingNumber(array);
 // Запускаем проверку написания слова "Число/Числа/Чисел" 
-if (result == 0 & result >= 10)
+if (result == 0 | result >= 10)
 {
     Console.WriteLine($"Пользователь ввел {result} чисел больше 0");
 }
@@ -38,7 +38,7 @@ int[] FillInArray(int size)
     for (int i = 0; i < size;)// i++ в данной части не указывается
     //так как ниже идет обработка, когда именно увеличиваем итератор
     {
-        Console.WriteLine($"Введите число {i + 1}");// Просьбы ввести число (для каждого элемента массива, так как работа происходит в цикле)
+        Console.WriteLine($"Введите число {i + 1}");// Просьба ввести число (для каждого элемента массива, так как работа происходит в цикле)
         bool isParsed = int.TryParse(Console.ReadLine(), out int num);
         if (!isParsed)
         {
