@@ -30,7 +30,7 @@ else if(result == 1)
     Console.WriteLine($"Пользователь ввел {result} число больше 0");
 }
 
-// Метод создания массива
+// Метод создания массива 
 int[] FillInArray(int size)
 {
     int[] array = new int[size];
