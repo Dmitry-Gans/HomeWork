@@ -23,7 +23,7 @@ int n1 = int.Parse(Console.ReadLine());
 
 int[,] matrix = GenerateArray(m, n);
 Printarray(matrix);
-Console.WriteLine($"Значение найдено: {Search(matrix, m1, n1)}");
+Console.WriteLine(Search(matrix, m1, n1));
 
 void Printarray(int[,] array)
 {
@@ -59,8 +59,18 @@ string Search(int[,] array, int i, int j)
         result = "Вы вышли за пределы созданного массива";
         return result;
     }
+    else if(i <= array.GetLength(0) && j >= array.GetLength(1))
+    {
+        result = "Вы вышли за пределы созданного массива";
+        return result;
+    }
+    else if(i >= array.GetLength(0) && j <= array.GetLength(1))
+    {
+        result = "Вы вышли за пределы созданного массива";
+        return result;
+    }
 
-    result = $"{array[i, j]}";
+    result = $"Значение найдено: {array[i, j]}";
     return result;
 
 }
