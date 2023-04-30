@@ -54,21 +54,21 @@ string Search(int[,] array, int i, int j)
 {
     string result = string.Empty;
 
-    if (i >= array.GetLength(0) && j >= array.GetLength(1))
+    if (i >= array.GetLength(0) || j >= array.GetLength(1))
     {
         result = "Вы вышли за пределы созданного массива";
         return result;
     }
-    else if(i <= array.GetLength(0) && j >= array.GetLength(1))
-    {
-        result = "Вы вышли за пределы созданного массива";
-        return result;
-    }
-    else if(i >= array.GetLength(0) && j <= array.GetLength(1))
-    {
-        result = "Вы вышли за пределы созданного массива";
-        return result;
-    }
+    // else if(i <= array.GetLength(0) && j >= array.GetLength(1))
+    // {
+    //     result = "Вы вышли за пределы созданного массива";
+    //     return result;
+    // }
+    // else if(i >= array.GetLength(0) && j <= array.GetLength(1))
+    // {
+    //     result = "Вы вышли за пределы созданного массива";
+    //     return result;
+    // }
 
     result = $"Значение найдено: {array[i, j]}";
     return result;
