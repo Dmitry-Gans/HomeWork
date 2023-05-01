@@ -14,7 +14,10 @@ PrintArray3D(array3D);
 int[,,] GenerateArray3D()
 {
     int[,,] result = new int[3, 3, 3];
-
+// Чтобы сгенерированные числа не повторялись, обращаеммся к HashSet
+// Добавленные в него числа становится индивидуальными и не повторяются.
+// Если сгенерированное число совпало с числом находящимся в HashSet,
+// цикл будет заново генерировать его
     HashSet<int> hashSet = new HashSet<int>();
 
     Random random = new Random();
