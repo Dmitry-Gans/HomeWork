@@ -18,14 +18,17 @@ Console.WriteLine("Введите количество столбцов у 2 м�
 int colsB = int.Parse(Console.ReadLine());
 
 int[,] matrix = GenerateArray(rowsA, colsA);
+Console.WriteLine("Первая матрица:");
 Print2Array(matrix);
-Console.WriteLine();
+
 int[,] matrix1 = GenerateArray1(rowsB, colsB);
+Console.WriteLine("Вторая матрица:");
 Print2Array(matrix1);
-int[,] result = SumMatrix(matrix, matrix1);
 Console.WriteLine();
+
+int[,] result = SumMatrix(matrix, matrix1);
+Console.WriteLine("Произведение двух матриц:");
 Print2Array(result);
-// Console.WriteLine($"Минимальная сумма находится на {MinSumLine(matrix)} строчке");
 
 int[,] GenerateArray(int a, int b)
 {
