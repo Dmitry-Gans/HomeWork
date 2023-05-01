@@ -20,7 +20,7 @@ int[,] SpiralArray(int sizeRow, int sizeCol)
 
     bool start = true;
     int status = 0; // Направление движения: 0 - вправо, 1 - вниз, 2 - влево, 3 - вверх
-
+// Пока start = true цикл будет выполняться
     while (start)
     {
         if (status == 0)
