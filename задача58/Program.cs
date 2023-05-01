@@ -69,13 +69,13 @@ void Print2Array(int[,] array)
 }
 int[,] SumMatrix(int[,] array, int[,] array1)
 {
-    int[,] result = new int[array.GetLength(0), array1.GetLength(1)];
+    int[,] result = new int[array.GetLength(0), array1.GetLength(1)];// Линии от первого массива, а столбцы от второго
 
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array1.GetLength(1); j++)
         {
-            int sum = 0;
+            int sum = 0;// Обнуляем переменную тут, чтобы в новой матрице узнавать сумму каждого элемента 
 
             for (int k = 0; k < array.GetLength(1); k++)
             {
